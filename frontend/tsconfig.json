@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "emitDeclarationOnly": true
+    // Add other options like "jsx", "module", etc., here if needed
+  },
+  "include": ["vite-env.d.ts", "src"]
+}
