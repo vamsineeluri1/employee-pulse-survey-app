@@ -29,7 +29,7 @@ let AdminController = class AdminController {
         const data = await this.adminService.export(format);
         if (format === 'csv') {
             res.setHeader('Content-Type', 'text/csv');
-            return res.send(data); // data should be CSV string
+            return res.send(data);
         }
         res.setHeader('Content-Type', 'application/json');
         return res.json(data);
