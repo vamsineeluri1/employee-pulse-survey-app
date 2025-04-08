@@ -93,7 +93,7 @@ npm run test:e2e
 ## 👨‍💻 Author
 - **Your Name**
 - Email: vamshi92n@gmail.com
-- GitHub: [Your GitHub](https://github.com/vamsineeluri1/employee-pulse-survey-app)
+- GitHub: [My GitHub](https://github.com/vamsineeluri1)
 
 ---
 
