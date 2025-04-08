@@ -1,3 +1,4 @@
+
 # Employee Pulse Survey Application
 
 ## 🚀 Project Overview
@@ -45,7 +46,7 @@ cd frontend
 npm start
 ```
 
-Backend will run on `http://localhost:3000`
+Backend will run on `http://localhost:3000`  
 Frontend will run on `http://localhost:3001`
 
 ## 🔥 API Endpoints
