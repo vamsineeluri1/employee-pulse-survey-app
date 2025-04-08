@@ -1,4 +1,5 @@
-import { Controller, Get, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Query, UseGuards, Res } from '@nestjs/common';
+import { Response } from 'express';
 import { AdminService } from './admin.service';
 import { AuthGuard } from '@nestjs/passport';
 
@@ -13,7 +14,18 @@ export class AdminController {
   }
 
   @Get('export')
-  async export(@Query('format') format: 'csv' | 'json' = 'json') {
-    return this.adminService.export(format);
+  async export(
+    @Query('format') format: 'csv' | 'json' = 'json',
+    @Res() res: Response,
+  ) {
+    const data = await this.adminService.export(format);
+
+    if (format === 'csv') {
+      res.setHeader('Content-Type', 'text/csv');
+      return res.send(data); // data should be CSV string
+    }
+
+    res.setHeader('Content-Type', 'application/json');
+    return res.json(data);
   }
 }
