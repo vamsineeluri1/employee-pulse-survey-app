@@ -92,8 +92,8 @@ npm run test:e2e
 
 ## 👨‍💻 Author
 - **Your Name**
-- Email: your-email@example.com
-- GitHub: [Your GitHub](https://github.com/your-github)
+- Email: vamshi92n@gmail.com
+- GitHub: [Your GitHub](https://github.com/yvamsineeluri1)
 
 ---
 
